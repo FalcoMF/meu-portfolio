@@ -1,1 +1,24 @@
+import java.util.Scanner;
+
+public class CalculadoraFrete {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o preço por quilômetro (R$): ");
+        double precoPorKm = scanner.nextDouble();
+
+        System.out.print("Digite a distância em quilômetros: ");
+        double distancia = scanner.nextDouble();
+
+        double precoFrete = calcularPrecoFrete(precoPorKm, distancia);
+
+        System.out.println("O preço do frete é: R$ " + precoFrete);
+        scanner.close();
+    }
+
+    public static double calcularPrecoFrete(double precoPorKm, double distancia) {
+        return precoPorKm * distancia;
+    }
+}
 
