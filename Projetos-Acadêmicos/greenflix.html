@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #111; color: #fff;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0f0f0f; border-bottom: 2px solid #fff;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #1db954; font-weight: bold;">Greenflix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#filmes" style="color: #fff;">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#series" style="color: #fff;">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato" style="color: #fff;">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="background-image: url('assets/img/hero.jpg'); background-size: cover; background-position: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding: 50px 20px; border-bottom: 2px solid #fff; text-align: center;">
+        <h2 style="color: #1db954; font-size: 2.5rem; margin-bottom: 10px;">Bem-vindo ao Greenflix</h2>
+        <p style="color: #ddd;">Assista aos seus filmes e séries favoritos a qualquer hora, em qualquer lugar.</p>
+    </section>
+
+    <!-- Filmes Section -->
+    <section id="filmes" class="container my-5">
+        <h2 style="color: #1db954; border-bottom: 2px solid #fff; display: inline-block; padding-bottom: 5px; margin-bottom: 20px;">Filmes</h2>
+        <div id="carouselFilmes" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/filme1.jpg" class="d-block w-25 mx-2" alt="Filme 1" style="border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                        <img src="assets/img/filme2.jpg" class="d-block w-25 mx-2" alt="Filme 2" style="border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                        <img src="assets/img/filme3.jpg" class="d-block w-25 mx-2" alt="Filme 3" style="border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/filme4.jpg" class="d-block w-25 mx-2" alt="Filme 4" style="border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                        <img src="assets/img/filme5.jpg" class="d-block w-25 mx-2" alt="Filme 5" style="border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                        <img src="assets/img/filme6.jpg" class="d-block w-25 mx-2" alt="Filme 6" style="border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFilmes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFilmes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #0f0f0f; color: #1db954; text-align: center; padding: 20px 10px; border-top: 2px solid #fff;">
+        <p style="margin: 0;">© 2024 Greenflix - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
