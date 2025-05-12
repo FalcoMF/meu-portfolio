@@ -4,33 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Greenflix</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
-<body class="bg-dark text-white">
+<body style="background-color: #111; color: white; font-family: 'Poppins', sans-serif;">
   <!-- Header -->
-  <header class="py-3 border-bottom border-success">
+  <header class="py-3 border-bottom" style="border-color: #1db954 !important; background-color: #0f0f0f;">
     <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3 text-success">Greenflix</h1>
+      <h1 class="h3" style="color: #1db954;">Greenflix</h1>
       <nav>
-        <a href="#filmes" class="text-white mx-3">Filmes</a>
-        <a href="#series" class="text-white mx-3">Séries</a>
+        <a href="#filmes" class="mx-3 text-white" style="text-decoration: none;">Filmes</a>
+        <a href="#series" class="mx-3 text-white" style="text-decoration: none;">Séries</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="text-center py-5">
-    <h2 class="display-4 text-success">Bem-vindo ao Greenflix</h2>
-    <p>Assista seus conteúdos favoritos onde e quando quiser.</p>
+    <h2 class="display-4" style="color: #1db954;">Bem-vindo ao Greenflix</h2>
+    <p style="color: #ccc;">Assista seus conteúdos favoritos onde e quando quiser.</p>
   </section>
 
   <!-- Filmes -->
   <section id="filmes" class="container my-5">
-    <h2 class="mb-4 text-success border-bottom border-success pb-2">Filmes</h2>
+    <h2 class="mb-4" style="color: #1db954; border-bottom: 2px solid #1db954; display: inline-block;">Filmes</h2>
     <div id="carouselFilmes" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex justify-content-center">
-            <img src="https://via.placeholder.com/200x
+            <img src="https://via.placeholder.com/200x300?text=Filme+1" class="d-block w-25 mx-2 rounded" alt="Filme 1"/>
+            <img src="https://via.placeholder.com/200x300?text=Filme+2" class="d-block w-25 mx-2 rounded" alt="Filme 2"/>
+            <img src="https://via.placeholder.com/200x300?text=Filme+3" class="d-block w-25 mx-2 rounded" alt="Filme 3"/>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <img src="https://via.placeholder.com/200x300?text=Filme+4" class="d-block w-25 mx-2 rounded" alt="Filme 4"/>
+            <img src="https://via.placeholder.com/200x300?text=Filme+5" class="d-block w-25 mx-2 rounded" alt="Filme 5"/>
+            <img src="https://via.placeholder.com/200x300?text=Filme+6" class="d-block w-25 mx-2 rounded" alt="Filme 6"/>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFilmes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselFilmes" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background-color: #0f0f0f; color: #1db954;">
+    <p class="mb-0">&copy; 2024 Greenflix - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
